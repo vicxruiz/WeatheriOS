@@ -8,12 +8,13 @@
 
 import Foundation
 
-class DataGetter {
+enum HTTPError: Error {
+    case non200StatusCode
+    case noData
+    case noRequest
+}
 
-    enum HTTPError: Error {
-        case non200StatusCode
-        case noData
-    }
+class DataGetter {
     
     func fetchData(with request: URLRequest, requestID: String? = nil, completion: @escaping (String?, Data?, Error?) -> Void) {
         

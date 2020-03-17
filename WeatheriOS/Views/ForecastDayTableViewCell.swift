@@ -12,8 +12,7 @@ import UIKit
 class ForecastDayTableViewCell: UITableViewCell {
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var lowTempLabel: UILabel!
-    @IBOutlet weak var highTempLabel: UILabel!
+    @IBOutlet weak var weatherImageView: UIImageView!
     @IBOutlet weak var averageTempLabel: UILabel!
     
     var forecastDay: ForecastDay? {
@@ -30,6 +29,8 @@ class ForecastDayTableViewCell: UITableViewCell {
         //descriptionLabel.text = forecastDay.day.condition.text
         averageTempLabel.text = "\(forecastDay.day.avgTemp)"
         dayLabel.text = forecastDay.date
+        descriptionLabel.text = forecastDay.day.condition.text
+        weatherImageView.imageFromServerURL(forecastDay.day.condition.icon, placeHolder: UIImage(named: "noimage"))
     }
 }
 

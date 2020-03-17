@@ -91,5 +91,4 @@ extension WeatherForecastViewController: UITableViewDataSource, UITableViewDeleg
         cell.forecastDay = forecastDay
         return cell
     }
-    
 }

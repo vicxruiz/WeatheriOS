@@ -6,10 +6,6 @@ target 'WeatheriOS' do
   use_frameworks!
 
   # Pods for WeatheriOS
-
-  target 'WeatheriOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+pod 'Kingfisher'
 
 end

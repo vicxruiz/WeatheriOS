@@ -30,7 +30,8 @@ class ForecastDayTableViewCell: UITableViewCell {
         averageTempLabel.text = "\(forecastDay.day.avgTemp)"
         dayLabel.text = forecastDay.date
         descriptionLabel.text = forecastDay.day.condition.text
-        weatherImageView.imageFromServerURL(forecastDay.day.condition.icon, placeHolder: UIImage(named: "noimage"))
+        weatherImageView.image = UIImage(named: "noimage")
+        
     }
 }
 

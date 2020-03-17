@@ -10,7 +10,7 @@
         <!--Weather Forecast-->
         <scene sceneID="azK-az-aLy">
             <objects>
-                <viewController id="Fqe-DW-KBx" sceneMemberID="viewController">
+                <viewController id="Fqe-DW-KBx" customClass="WeatherForecastViewController" customModule="WeatheriOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Rl-Ix-FCe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,6 +66,10 @@
                         <viewLayoutGuide key="safeArea" id="o42-NO-VHZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Weather Forecast" id="K8f-Ht-imX"/>
+                    <connections>
+                        <outlet property="searchBar" destination="LTf-mz-W99" id="cPY-12-klD"/>
+                        <outlet property="tableView" destination="SZs-CU-7go" id="6ce-D1-kEq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGI-56-Imd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,9 +9,9 @@
 import Foundation
 
 struct Forecast: Codable {
-    var forecastDay: [ForecastDay]
+    var forecasts: [ForecastDay]
     enum CodingKeys: String, CodingKey {
-        case forecastDay = "forecastday"
+        case forecasts = "forecastday"
     }
 }
 

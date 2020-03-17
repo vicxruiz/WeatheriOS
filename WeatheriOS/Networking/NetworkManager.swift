@@ -17,6 +17,8 @@ enum HTTPMethod: String {
 
 class NetworkManager {
     
+    //MARK: Network Enums
+    
     enum Endpoints: String {
         case forecast = "forecast.json"
     }

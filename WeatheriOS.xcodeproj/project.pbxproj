@@ -24,6 +24,7 @@
 		984D2F9D24201BA900049C7F /* WeatheriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D2F9C24201BA900049C7F /* WeatheriOSTests.swift */; };
 		985FF6D6242167CB00466398 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985FF6D5242167CB00466398 /* RequestManager.swift */; };
 		985FF6DA24216E4F00466398 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985FF6D924216E4F00466398 /* UIImageView+Extensions.swift */; };
+		985FF6DC2421759600466398 /* Screen Shot 2020-03-17 at 5.15.09 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 985FF6DB2421759600466398 /* Screen Shot 2020-03-17 at 5.15.09 PM.png */; };
 		ED133E20AC595FFD57847DB0 /* Pods_WeatheriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0F65C426D6114706D575F3 /* Pods_WeatheriOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		984D2F9E24201BA900049C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		985FF6D5242167CB00466398 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		985FF6D924216E4F00466398 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		985FF6DB2421759600466398 /* Screen Shot 2020-03-17 at 5.15.09 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-03-17 at 5.15.09 PM.png"; sourceTree = "<group>"; };
 		FC0F65C426D6114706D575F3 /* Pods_WeatheriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatheriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 		984D2F8424201BA500049C7F /* WeatheriOS */ = {
 			isa = PBXGroup;
 			children = (
+				985FF6DB2421759600466398 /* Screen Shot 2020-03-17 at 5.15.09 PM.png */,
 				9815B63A24214E3E000E7792 /* Extensions */,
 				984D2FAD24210B0F00049C7F /* Helpers */,
 				984D2FAC24210B0900049C7F /* Networking */,
@@ -300,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985FF6DC2421759600466398 /* Screen Shot 2020-03-17 at 5.15.09 PM.png in Resources */,
 				984D2F9224201BA800049C7F /* LaunchScreen.storyboard in Resources */,
 				984D2F8F24201BA800049C7F /* Assets.xcassets in Resources */,
 				984D2F8D24201BA500049C7F /* Main.storyboard in Resources */,

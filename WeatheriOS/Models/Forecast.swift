@@ -21,11 +21,18 @@ struct ForecastDay: Codable {
 }
 
 struct Day: Codable {
-    var maxTemp: Int
-    var minTemp: Int
-    var avgTemp: Int
-    var maxWind: Int
+    var maxTemp: Double
+    var minTemp: Double
+    var avgTemp: Double
+    var maxWind: Double
     var condition: Condition
+    enum CodingKeys: String, CodingKey {
+        case maxTemp = "maxtemp_f"
+        case minTemp = "mintemp_f"
+        case avgTemp = "avgtemp_f"
+        case maxWind = "maxwind_mph"
+        case condition = "condition"
+    }
 }
 
 struct Condition: Codable {

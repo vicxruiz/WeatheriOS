@@ -21,6 +21,7 @@ class WeatherForecastViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setSearchBar()
+        setTableView()
     }
     
 }
@@ -40,6 +41,8 @@ extension WeatherForecastViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.enteredText = searchBar.text ?? ""
+        makeSearchRequest()
         searchBar.resignFirstResponder()
         searchBar.showsCancelButton = false
     }
@@ -65,6 +68,28 @@ extension WeatherForecastViewController: UISearchBarDelegate {
                 }
             }
         }
+    }
+    
+}
+
+extension WeatherForecastViewController: UITableViewDataSource, UITableViewDelegate {
+    func setTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return forecasts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ForecastDayCell", for: indexPath) as? ForecastDayTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let forecastDay = forecasts[indexPath.row]
+        cell.forecastDay = forecastDay
+        return cell
     }
     
 }

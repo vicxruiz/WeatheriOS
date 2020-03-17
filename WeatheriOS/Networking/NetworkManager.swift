@@ -24,7 +24,7 @@ class NetworkManager {
     }
     
     enum QueryItems: String {
-        case apiKey = "api_key"
+        case apiKey = "key"
         case query = "q"
         case days = "days"
     }

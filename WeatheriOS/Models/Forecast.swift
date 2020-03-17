@@ -8,19 +8,19 @@
 
 import Foundation
 
-struct Forecast {
+struct Forecast: Codable {
     var forecastDay: [ForecastDay]
     enum CodingKeys: String, CodingKey {
         case forecastDay = "forecastday"
     }
 }
 
-struct ForecastDay {
+struct ForecastDay: Codable {
     var date: String
     var day: Day
 }
 
-struct Day {
+struct Day: Codable {
     var maxTemp: Int
     var minTemp: Int
     var avgTemp: Int
@@ -28,7 +28,7 @@ struct Day {
     var condition: Condition
 }
 
-struct Condition {
+struct Condition: Codable {
     var text: String
     var icon: String
 }

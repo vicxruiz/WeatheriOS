@@ -21,7 +21,7 @@ Package management tool
 
 ### The Code Structure
 
-MVVM
+MVC
 
 ### Key Features
 
